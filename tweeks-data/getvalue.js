@@ -26,3 +26,13 @@ $(document).ready(function () {
         $('body').removeClass("houses-active");
     }
 });
+
+// get the count/length of any class and id 
+let totalSlides1 = $('.collection-item-class').length;
+
+// get the count/length of any class and id and subtract the no from that value
+
+let totalSlides = $('.collection-item-class').length -2;
+
+// show the lenght of the any class variable to any element
+$('.total-slidesText-class').text(totalSlides);
