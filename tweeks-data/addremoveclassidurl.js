@@ -12,3 +12,11 @@ $(document).ready(function () {
 
 const footerHeight = $(".footer").height();
 $('.blank-footer').css("height", footerHeight);
+
+// add removed class based on the active radio button
+$(document).ready(function() {
+    $('input').click(function() {
+        $('input:not(:checked)').parent().removeClass("radio-active");
+        $('input:checked').parent().addClass("radio-active");
+    });
+});
